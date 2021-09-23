@@ -1,8 +1,12 @@
 # miyaou.fr
-The personnal weebsite that I work on when I'm too tired to sleep 🙃
 
-You can check it out [here](http://www.miyaou.fr) !
+The personnal website that I work on when I'm too tired to sleep 🙃
 
+It's just me trying to figure out HTML/CSS though...
+
+You can check out how it goes [here](http://www.miyaou.fr) !
+
+---
 
 ### TODO
 - [ ] Design website

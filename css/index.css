@@ -5,19 +5,125 @@ body {
 /* ---- Header ---- */
 
 header {
-    display: grid;
-    grid-template-columns: minmax(80px, 1fr) minmax(auto, 45ch) minmax(80px, 1fr);
+
+
+}
+.pull_right {
+    float: right;
+    margin-right: 10px;
 }
 
-header aside {
-    text-align: right;
-    /* Grid height (if the image is smaller than the titles) */
-    height: 10em;
+navBar {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+
+    position: absolute; height: 10%; left: 0px; top: 0px;    /*Stick to the top*/
+
+    width:100%;
+
+    background-color: #191919;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-header aside img {
-    max-width: 130%;
-    height: 130%;
-    /* Keep image aspect ratio */
+#webSiteName {
+    float:left;
+
+    position: absolute; left: 10px;
+    width: fit-content;
+    height: 58px;
+    left: 20px;
+    top: 20px;
+
+    font-family: Proxima Nova Alt;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    /*line-height: 58px;*/
+    display: flex;
+    align-items: center;
+
+    color: #F178B6;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin: 0px 20px;
+}
+
+right_bar {
+    position: absolute; right: 50px; top: 0px;    /*Stick to the top*/
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    width: fit-content;
+    height: fit-content;
+    flex: none;
+    flex-grow: 0;
+    margin: 0px 10px;
     object-fit: contain;
+}
+
+#iconMail {
+    background: url("../img/enveloppe.png"), #F178B6;
+    background-repeat: no-repeat;
+    background-size: 105% 105%;
+    width: 54px;
+    height: 40.5px;
+
+    border: 2px solid #888888;
+    border-radius: 5px;
+}
+
+#iconLinkedin {
+    background: url("../img/linkedin_logo.png"), #F178B6;
+    background-repeat: no-repeat;
+    background-size: 105% 105%;
+    width: 54px;
+    height: 54px;
+
+    border: 2px solid #888888;
+    border-radius: 15px;
+
+}
+
+#iconGithub {
+    background: url("../img/github_logo.png"), #F178B6;
+    background-repeat: no-repeat;
+    background-size: 105% 105%;
+    width: 54px;
+    height: 54px;
+    border: 2px solid #888888;
+    border-radius: 50px;
+}
+
+navBar #resume {
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+    border-radius: 18px;
+    border: 2px solid #888888;
+
+    font-family: Proxima Nova Alt;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #F178B6;
+    white-space: nowrap;
+
+    color: #191919;
 }

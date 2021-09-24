@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Proxima Nova');
+/*@import url('https://fonts.googleapis.com/css?family=Proxima Nova');*/
 
 body {
     background-color: #E3E3E3;
@@ -13,12 +13,12 @@ body {
 }
 
 navBar {
-    position: fixed; height: 10%; left: 0px; top: 0px;    /*Stick to the top*/
+    position: fixed; height: fit-content; left: 0px; top: 0px;    /*Stick to the top*/
     z-index: 16;
 
     flex-direction: row;
     align-items: center;
-    padding: 10px;
+    padding: auto;
     width:100%;
 
     background-color: #191919;
@@ -28,28 +28,26 @@ navBar {
 #webSiteName {
     float:left;
 
-    position: absolute; left: 10px;
+    position: absolute;
+    left: 10px;
     width: fit-content;
-    height: 58px;
-    left: 20px;
-    top: 20px;
+    height:inherit;
 
     font-family: Proxima Nova Alt;
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
-    /*line-height: 58px;*/
     display: flex;
-    align-items: center;
-
+    text-align: center;
+    align-self: center;
     color: #F178B6;
 
     /* Inside Auto Layout */
-
     flex: none;
     order: 0;
     flex-grow: 1;
-    margin: 0px 20px;
+    
+    display: ;
 }
 
 right_bar {
@@ -135,19 +133,20 @@ right_bar {
 navBar #resume {
     width: fit-content;
     height: fit-content;
-    padding: 15px;
+    padding: 9px;
     border-radius: 18px;
     border: 2px solid #888888;
 
     font-family: Proxima Nova Alt;
     font-style: normal;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 28px;
     display: flex;
     align-items: center;
     background-color: #F178B6;
     white-space: nowrap;
 
+    margin: 3%;
     color: #191919;
 }
 
@@ -184,7 +183,7 @@ header {
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 5% 10px 5%;
+    margin: 5% 10px 2%;
 }
 
 header #headername {
@@ -234,8 +233,8 @@ header .htext {
 
 header #headerimg {
     position: relative;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     padding-left: 10px;
     padding-top: 10px;
 
@@ -250,15 +249,14 @@ header #headerimg {
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0px 50px;
+    margin: 0px 10px;
 }
 
 header #headerrightPadding {
-    position: static;
-    width: 260px;
-    height: 260px;
-    left: 699px;
-    top: 10px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    float: right;
 
 
     /* Inside Auto Layout */
@@ -285,4 +283,16 @@ header #headerrightPadding {
 
     margin-top: 15px;
     margin-bottom: 20px;
+}
+
+/* Smartphones */
+@media (max-width: 750px) {
+    body {
+        margin-top: 0em;
+    }
+
+    navBar {
+        height: fit-content;
+    }
+
 }

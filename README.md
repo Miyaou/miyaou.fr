@@ -1,7 +1,16 @@
 # miyaou.fr
-My personnal website
+
+The personnal website that I work on when I'm too tired to sleep 🙃
+
+It's just me trying to figure out HTML/CSS though...
+
+You can check out how it goes [here](http://www.miyaou.fr) !
+
+---
 
 ### TODO
-- [ ] Redraw icon
 - [ ] Design website
-- [ ] Redirect CV, images etc..
+- [ ] Write content
+- [ ] Redraw icon
+- [ ] Research https certification
+- [X] Redirect CV, images etc..

@@ -1,19 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Proxima Nova');
+
 body {
+    background-color: #E3E3E3;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     margin-top: 4em;
-}
-
-h1 {
-    font-family: Proxima Nova Alt;
-    font-style: normal;
-    color: #191919;
-
-    font-size: 12px;
-
-    justify-content: left;
-    text-align: center;
-
-    margin-top: 0;
-    margin-bottom: 0.5em;
 }
 
 .pull_right {
@@ -22,12 +13,12 @@ h1 {
 }
 
 navBar {
+    position: fixed; height: 10%; left: 0px; top: 0px;    /*Stick to the top*/
+    z-index: 16;
+
     flex-direction: row;
     align-items: center;
     padding: 10px;
-
-    position: fixed; height: 10%; left: 0px; top: 0px;    /*Stick to the top*/
-
     width:100%;
 
     background-color: #191919;
@@ -76,6 +67,7 @@ right_bar {
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
+    position: relative;
     width: fit-content;
     height: fit-content;
     flex: none;
@@ -167,10 +159,10 @@ content{
     flex-direction: column;
     align-items: center;
 
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 100%;
-    top: 20%;
+    height: max-content;
+    top: 15%;
 }
 
 header {
@@ -182,19 +174,17 @@ header {
     align-items: center;
     padding: 10px;
 
-    position: static;
-    width: px;
-    height: 280px;
-    left: 229.5px;
-    top: 80px;
-
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    left: auto;
+    top: 5%;
 
     /* Inside Auto Layout */
-
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 40px 0px;
+    margin: 5% 10px 5%;
 }
 
 header #headername {
@@ -220,7 +210,7 @@ header #headername {
     margin: 0px 35px;
 }
 
-header .text {
+header .htext {
     position: relative;
     width: auto;
     height: fit-content;
@@ -278,4 +268,21 @@ header #headerrightPadding {
     align-self: stretch;
     flex-grow: 0;
     margin: 0px 50px;
+}
+
+.text {
+    position: relative;
+    width: 60%;
+    height: max-content;
+
+    font-family: Proxima Nova Alt;
+    color: #191919;
+
+    font-size: 22px;
+
+    justify-content: left;
+    text-align: left;
+
+    margin-top: 15px;
+    margin-bottom: 20px;
 }

@@ -13,6 +13,6 @@ You can check out how it goes [here](http://www.miyaou.fr) !
 - [ ] Write content
 - [ ] Redraw icon
 - [ ] Research https certification
-- [ ] Vertically center website name
 
+- [X] Vertically center website name
 - [X] Redirect CV, images etc..

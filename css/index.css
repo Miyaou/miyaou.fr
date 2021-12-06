@@ -1,5 +1,10 @@
 /*@import url('https://fonts.googleapis.com/css?family=Proxima Nova');*/
+@import url('fonts/stylesheet.css');
 
+a {
+    text-decoration: none;
+    color: #F178B6; 
+}
 body {
     background-color: #E3E3E3;
     background-repeat: no-repeat;
@@ -34,7 +39,7 @@ navBar #webSiteName {
     height:fit-content;
     padding: 9px;
 
-    font-family: Proxima Nova Alt;
+    font-family: proxima_nova_altbold;
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
@@ -137,7 +142,7 @@ navBar #resume {
     border-radius: 18px;
     border: 2px solid #888888;
 
-    font-family: Proxima Nova Alt;
+    font-family: proxima_nova_altbold;
     font-style: normal;
     font-weight: bold;
     font-size: 28px;
@@ -216,7 +221,7 @@ header .htext {
     left: auto;
     top: 20%;
 
-    font-family: Proxima Nova Alt;
+    font-family: proxima_nova_altregular;
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
@@ -273,7 +278,7 @@ header #headerrightPadding {
     width: 60%;
     height: max-content;
 
-    font-family: Proxima Nova Alt;
+    font-family: proxima_nova_altregular;
     color: #191919;
 
     font-size: 22px;
